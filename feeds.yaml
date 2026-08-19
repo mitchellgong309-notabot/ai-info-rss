@@ -1,0 +1,73 @@
+# 信息源唯一配置。所有抓取/构建行为由此驱动。
+# fulltext: auto(默认, RSS全文直用→抓原文→回退摘要) | always_fetch | never
+
+sources:
+  - id: lennys-newsletter
+    name: Lenny's Newsletter
+    category: AI PM能力
+    fetcher: rss
+    url: https://www.lennysnewsletter.com/feed
+
+  - id: one-useful-thing
+    name: One Useful Thing
+    category: AI时代个人竞争力
+    fetcher: rss
+    url: https://www.oneusefulthing.org/feed
+
+  - id: latent-space
+    name: Latent Space
+    category: 技术理解
+    fetcher: rss
+    url: https://www.latent.space/feed
+
+  - id: fs-blog
+    name: Farnam Street
+    category: 思维模型
+    fetcher: rss
+    url: https://fs.blog/feed/
+
+  - id: bens-bites
+    name: Ben's Bites
+    category: AI创业动态
+    fetcher: rss
+    url: https://www.bensbites.com/feed
+
+  - id: stratechery
+    name: Stratechery
+    category: 商业判断
+    fetcher: rss
+    url: https://stratechery.com/feed/
+    fulltext: auto
+
+  - id: firstround-review
+    name: First Round Review
+    category: 创业和产品决策
+    fetcher: rss
+    url: https://review.firstround.com/glossary/rss/
+
+  - id: the-batch
+    name: The Batch
+    category: AI趋势基础
+    fetcher: html
+    url: https://www.deeplearning.ai/the-batch/
+    link_pattern:
+      include: '^/the-batch/issue-\d+/?$'
+
+  - id: a16z-ai
+    name: a16z AI
+    category: AI产业机会
+    fetcher: html
+    url: https://a16z.com/ai/
+    link_pattern:
+      include: '^https://a16z\.com/[^/]+/[^/]+/?$'
+      exclude: '/(podcasts?|newsletters?|news|press|jobs|about|portfolio|team|research|playbook|guides?|articles?|videos?|events?)/'
+
+# 保留策略：防仓库膨胀
+retention:
+  max_per_source: 200
+  max_age_days: 180
+
+site:
+  name: AI 简报
+  description: 个人 AI 信息源聚合简报
+  tz: Asia/Shanghai

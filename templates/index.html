@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="filters" id="filters">
+  <button class="filter-btn active" data-filter="all">全部</button>
+  {% for cat in categories %}
+  <button class="filter-btn" data-filter="{{ cat }}">{{ cat }}</button>
+  {% endfor %}
+</div>
+{% if health %}
+{% set failed = [] %}
+{% for sid, h in health.items() if not h.status == 'ok' %}{% if failed.append(sid) %}{% endif %}{% endfor %}
+{% if failed %}
+<div class="alert">
+  以下源本次抓取失败（不影响其余内容）：
+  {% for sid in failed %}{{ sid }}{% if not loop.last %}、{% endif %}{% endfor %}
+</div>
+{% endif %}
+{% endif %}
+{% for group in groups %}
+<section class="date-group">
+  <h2 class="date-heading">{{ group.date }}</h2>
+  {% for item in group.entries %}
+  {% include "partials/item.html" %}
+  {% endfor %}
+</section>
+{% else %}
+<p class="empty">暂无内容，等待首次抓取。</p>
+{% endfor %}
+{% if has_more %}
+<p class="more-link"><a href="archive.html">查看全部归档 →</a></p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,14 @@
+<article class="item" data-category="{{ item.category }}" data-source="{{ item.source_id }}">
+  <h3><a href="articles/{{ item.id }}.html">{{ item.title }}</a></h3>
+  <div class="meta">
+    <span class="badge badge-{{ item.content_status }}">
+      {%- if item.content_status == 'summary_only' %}摘要{% else %}全文{% endif -%}
+    </span>
+    <span class="src">{{ item.source_name }}</span>
+    <span class="cat">{{ item.category }}</span>
+    {% if item.author %}<span class="author">{{ item.author }}</span>{% endif %}
+  </div>
+  {% if item.summary %}
+  <p class="excerpt">{{ item.summary | striptags | truncate(180) }}</p>
+  {% endif %}
+</article>

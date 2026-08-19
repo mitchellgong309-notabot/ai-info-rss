@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site_name }}{% endblock %}</title>
+<link rel="stylesheet" href="{{ rel_root if rel_root is defined else '' }}static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="{{ rel_root }}index.html">{{ site_name }}</a>
+    <nav>
+      <a href="{{ rel_root }}index.html">最新</a>
+      <a href="{{ rel_root }}archive.html">归档</a>
+    </nav>
+    <input id="search-box" type="search" placeholder="搜索标题/来源…" autocomplete="off">
+  </div>
+</header>
+<main class="container">
+{% block content %}{% endblock %}
+</main>
+<footer class="footer">
+  <p>{{ site_description }} · 由 GitHub Actions 自动更新 · <a href="https://github.com" rel="noopener">源码</a></p>
+</footer>
+<script src="{{ rel_root }}static/main.js"></script>
+</body>
+</html>

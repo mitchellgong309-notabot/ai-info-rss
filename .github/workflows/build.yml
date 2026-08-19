@@ -1,0 +1,82 @@
+name: Build & Deploy
+
+on:
+  schedule:
+    - cron: '21 */6 * * *'  # 避开整点
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/**'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: build-and-deploy
+  cancel-in-progress: false  # 排队不取消
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build
+        run: python build.py --verbose
+
+      - name: Verify internal links
+        run: python scripts/verify_links.py dist/
+
+      - name: Build summary
+        run: |
+          {
+            echo "## 构建结果"
+            python - <<'EOF'
+          import json, pathlib
+          h = json.loads(pathlib.Path("data/health.json").read_text(encoding="utf-8"))
+          m = json.loads(pathlib.Path("data/meta.json").read_text(encoding="utf-8"))
+          print(f"- 总文章数: {m['total_articles']}")
+          for sid, info in h["sources"].items():
+              mark = "✅" if info["status"] == "ok" else ("⚠️" if info["status"] == "degraded" else "❌")
+              line = f"- {mark} {sid}: {info['status']} ({info.get('total', 0)} 篇)"
+              if info.get("error"):
+                  line += f" — {info['error'][:120]}"
+              print(line)
+          EOF
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit data changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && echo "data/ 无变更" && exit 0
+          git commit -m "chore(data): update fetched articles [skip ci]"
+          git push
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

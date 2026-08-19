@@ -1,0 +1,42 @@
+{
+ "checked_at": "2026-08-19T02:48:42.981434+00:00",
+ "sources": {
+  "lennys-newsletter": {
+   "status": "ok",
+   "total": 20
+  },
+  "one-useful-thing": {
+   "status": "ok",
+   "total": 8
+  },
+  "latent-space": {
+   "status": "ok",
+   "total": 20
+  },
+  "fs-blog": {
+   "status": "ok",
+   "total": 18
+  },
+  "bens-bites": {
+   "status": "ok",
+   "total": 20
+  },
+  "stratechery": {
+   "status": "error",
+   "error": "HTTP 请求失败: [WinError 10054] 远程主机强迫关闭了一个现有的连接。",
+   "total": 0
+  },
+  "firstround-review": {
+   "status": "ok",
+   "total": 0
+  },
+  "the-batch": {
+   "status": "ok",
+   "total": 17
+  },
+  "a16z-ai": {
+   "status": "ok",
+   "total": 1
+  }
+ }
+}

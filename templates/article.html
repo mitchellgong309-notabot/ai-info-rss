@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% set rel_root = '../' %}
+{% block title %}{{ article.title }} · {{ site_name }}{% endblock %}
+{% block content %}
+<div class="article-topbar">
+  <a class="back" href="../index.html">← 返回列表</a>
+</div>
+<article class="article">
+  <header>
+    <h1>{{ article.title }}</h1>
+    <div class="meta">
+      <span class="src">{{ article.source_name }}</span>
+      <span class="cat">{{ article.category }}</span>
+      {% if article.author %}<span class="author">{{ article.author }}</span>{% endif %}
+      <time>{{ article.published_at | dt(true) }}</time>
+    </div>
+  </header>
+
+  {% if article.content_status == 'summary_only' %}
+  <div class="alert">
+    本篇未获取到全文（可能因付费墙或站点限制），展示摘要。
+    请<a href="{{ article.url }}" rel="noopener">前往原文阅读 ↗</a>
+  </div>
+  {% if article.summary %}<div class="summary">{{ article.summary | safe }}</div>{% endif %}
+  {% else %}
+  <div class="content">{{ article.content_html | safe }}</div>
+  {% endif %}
+
+  <p class="origin-link"><a href="{{ article.url }}" rel="noopener">查看原文 ↗</a></p>
+</article>
+
+{% if prev_in_source or next_in_source %}
+<nav class="pager">
+  {% if prev_in_source %}
+  <a class="pager-prev" href="{{ prev_in_source.id }}.html">← 上一篇（更早）<br><span>{{ prev_in_source.title | truncate(60) }}</span></a>
+  {% else %}<span></span>{% endif %}
+  {% if next_in_source %}
+  <a class="pager-next" href="{{ next_in_source.id }}.html">下一篇（更新）→<br><span>{{ next_in_source.title | truncate(60) }}</span></a>
+  {% endif %}
+</nav>
+{% endif %}
+{% endblock %}
