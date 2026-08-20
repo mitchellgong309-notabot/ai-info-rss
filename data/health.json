@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-08-19T02:48:42.981434+00:00",
+ "checked_at": "2026-08-20T02:16:49.151420+00:00",
  "sources": {
   "lennys-newsletter": {
    "status": "ok",
@@ -11,7 +11,7 @@
   },
   "latent-space": {
    "status": "ok",
-   "total": 20
+   "total": 21
   },
   "fs-blog": {
    "status": "ok",
@@ -22,16 +22,16 @@
    "total": 20
   },
   "stratechery": {
-   "status": "error",
-   "error": "HTTP 请求失败: [WinError 10054] 远程主机强迫关闭了一个现有的连接。",
-   "total": 0
+   "status": "ok",
+   "total": 10
   },
   "firstround-review": {
    "status": "ok",
    "total": 0
   },
   "the-batch": {
-   "status": "ok",
+   "status": "error",
+   "error": "列表页请求失败: Client error '403 Forbidden' for url 'https://www.deeplearning.ai/the-batch/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
    "total": 17
   },
   "a16z-ai": {
