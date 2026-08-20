@@ -66,6 +66,8 @@ jobs:
           git push
 
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true  # 自动启用 Pages 并将 Source 设为 GitHub Actions
 
       - uses: actions/upload-pages-artifact@v3
         with:
