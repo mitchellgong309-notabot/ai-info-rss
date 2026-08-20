@@ -162,4 +162,15 @@ body {
   .article h1 { font-size: 1.35rem; }
 }
 
+/* 离线页 */
+.offline-box {
+  max-width: 32rem; margin: 80px auto; text-align: center;
+}
+.offline-box h1 { font-size: 1.4rem; margin-bottom: 12px; }
+.offline-box .btn {
+  display: inline-block; margin-top: 12px; padding: 8px 22px;
+  background: var(--accent); color: #fff; border-radius: 8px;
+  text-decoration: none; font-size: .95rem;
+}
+
 .hidden { display: none !important; }

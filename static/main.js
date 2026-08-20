@@ -2,6 +2,18 @@
 (function () {
   "use strict";
 
+  // 注册 Service Worker（PWA 离线阅读）。sw.js 位于站点根，
+  // 通过 <link rel="manifest"> 的地址推导，兼容子路径部署（如 /ai-info-rss/）。
+  if ("serviceWorker" in navigator) {
+    var manifestLink = document.querySelector('link[rel="manifest"]');
+    if (manifestLink) {
+      var swUrl = new URL("sw.js", manifestLink.href).href;
+      navigator.serviceWorker.register(swUrl).catch(function (e) {
+        console.warn("SW 注册失败:", e);
+      });
+    }
+  }
+
   // 分类过滤
   var buttons = document.querySelectorAll(".filter-btn");
   if (buttons.length) {

@@ -37,7 +37,12 @@ def generate_site(root: Path, cfg: AppConfig, articles: list[Article],
     if dist.exists():
         shutil.rmtree(dist)
     dist.mkdir(parents=True)
-    shutil.copytree(root / "static", dist / "static")
+    shutil.copytree(root / "static", dist / "static",
+                    ignore=shutil.ignore_patterns("sw.js", "manifest.webmanifest"))
+    # PWA：sw.js 与 manifest 必须位于站点根（scope 约束）
+    shutil.copy2(root / "static" / "sw.js", dist / "sw.js")
+    shutil.copy2(root / "static" / "manifest.webmanifest",
+                 dist / "manifest.webmanifest")
 
     env = Environment(
         loader=FileSystemLoader(str(root / "templates")),
@@ -92,6 +97,10 @@ def generate_site(root: Path, cfg: AppConfig, articles: list[Article],
                 next_in_source=src_items[i - 1] if i > 0 else None,
             )
             (arts_dir / f"{a.id}.html").write_text(html, encoding="utf-8")
+
+    # 离线兜底页（PWA）
+    (dist / "offline.html").write_text(env.get_template("offline.html").render(),
+                                        encoding="utf-8")
 
     # 搜索索引
     index_entries = [{

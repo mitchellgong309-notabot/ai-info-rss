@@ -4,7 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}{{ site_name }}{% endblock %}</title>
-<link rel="stylesheet" href="{{ rel_root if rel_root is defined else '' }}static/style.css">
+<link rel="manifest" href="{{ rel_root }}manifest.webmanifest">
+<meta name="theme-color" content="#0b57d0">
+<link rel="apple-touch-icon" href="{{ rel_root }}static/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" href="{{ rel_root }}static/style.css">
 </head>
 <body>
 <header class="topbar">
