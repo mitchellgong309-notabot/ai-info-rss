@@ -1,8 +1,22 @@
 {
  "source_id": "lennys-newsletter",
- "updated_at": "2026-08-19T02:16:22.835038+00:00",
- "count": 20,
+ "updated_at": "2026-08-23T02:02:35.045592+00:00",
+ "count": 21,
  "articles": [
+  {
+   "id": "c99cdf1d4d69b92d",
+   "title": "🧠 Community Wisdom: Favorite Lenny’s Product Pass tools, how AI is reshaping hiring, what to prioritize when you join a new company, and more",
+   "url": "https://www.lennysnewsletter.com/p/community-wisdom-favorite-lennys",
+   "author": "Kiyani",
+   "published_at": "2026-08-22T19:23:07+00:00",
+   "summary": "Community Wisdom 198",
+   "content_html": "<p><em>👋 Hello and welcome to this week’s edition of ✨ <strong>Community Wisdom</strong> ✨ a subscriber-only email, delivered every Saturday, highlighting the most helpful conversations in <a href=\"https://forms.gle/syq81QDwqbvL3Yn58\" rel=\"noopener nofollow\">our members-only Slack community</a>. </em></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" href=\"https://substackcdn.com/image/fetch/$s_!KxHU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1ca8352-9571-4b81-b041-52374176f4fc_2912x1456.png\" target=\"_blank\" rel=\"noopener nofollow\"><div class=\"image2-inset\"><img alt=\"\" class=\"sizing-normal\" height=\"728\" src=\"https://substackcdn.com/image/fetch/$s_!KxHU!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1ca8352-9571-4b81-b041-52374176f4fc_2912x1456.png\" title=\"\" width=\"1456\"><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"></div></div></div></a></figure></div>\n      <p>\n          <a href=\"https://www.lennysnewsletter.com/p/community-wisdom-favorite-lennys\" rel=\"noopener nofollow\">\n              Read more\n          </a>\n      </p>",
+   "content_status": "full",
+   "source_id": "lennys-newsletter",
+   "source_name": "Lenny's Newsletter",
+   "category": "AI PM能力",
+   "fetched_at": "2026-08-23T02:02:35.029635+00:00"
+  },
   {
    "id": "0bd92e9f1276c6e8",
    "title": "I tested Grok Bot, Grok 4.6, and Cursor Origin - here’s my honest take",
