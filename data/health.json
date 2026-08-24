@@ -1,9 +1,9 @@
 {
- "checked_at": "2026-08-23T13:05:49.705730+00:00",
+ "checked_at": "2026-08-24T13:18:07.445635+00:00",
  "sources": {
   "lennys-newsletter": {
    "status": "ok",
-   "total": 22
+   "total": 23
   },
   "one-useful-thing": {
    "status": "ok",
@@ -23,7 +23,7 @@
   },
   "stratechery": {
    "status": "ok",
-   "total": 11
+   "total": 12
   },
   "firstround-review": {
    "status": "ok",
