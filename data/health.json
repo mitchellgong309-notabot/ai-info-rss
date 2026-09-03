@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-09-02T16:41:00.901421+00:00",
+ "checked_at": "2026-09-03T11:24:55.947291+00:00",
  "sources": {
   "lennys-newsletter": {
    "status": "ok",
@@ -11,7 +11,7 @@
   },
   "latent-space": {
    "status": "ok",
-   "total": 37
+   "total": 38
   },
   "fs-blog": {
    "status": "ok",
