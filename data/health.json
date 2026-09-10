@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-09-10T16:31:11.551074+00:00",
+ "checked_at": "2026-09-10T20:56:56.669875+00:00",
  "sources": {
   "lennys-newsletter": {
    "status": "ok",
@@ -36,7 +36,7 @@
   },
   "a16z-ai": {
    "status": "ok",
-   "total": 2
+   "total": 5
   }
  }
 }
