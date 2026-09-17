@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-09-17T11:51:04.960165+00:00",
+ "checked_at": "2026-09-17T17:07:35.795537+00:00",
  "sources": {
   "lennys-newsletter": {
    "status": "ok",
@@ -19,7 +19,7 @@
   },
   "bens-bites": {
    "status": "ok",
-   "total": 32
+   "total": 33
   },
   "stratechery": {
    "status": "ok",
