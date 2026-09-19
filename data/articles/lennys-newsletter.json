@@ -1,8 +1,22 @@
 {
  "source_id": "lennys-newsletter",
- "updated_at": "2026-09-16T17:06:57.218805+00:00",
- "count": 42,
+ "updated_at": "2026-09-19T20:49:08.389419+00:00",
+ "count": 43,
  "articles": [
+  {
+   "id": "e06b36aa1924df7d",
+   "title": "🧠 Community Wisdom: Finding your first users before the product exists, debriefing your own interviews, what to optimize for in the early years of your career, and more",
+   "url": "https://www.lennysnewsletter.com/p/community-wisdom-finding-your-first",
+   "author": "Kiyani",
+   "published_at": "2026-09-19T19:42:24+00:00",
+   "summary": "Community Wisdom 299",
+   "content_html": "<p><em>👋 Hello and welcome to this week’s edition of ✨ <strong>Community Wisdom</strong> ✨ a subscriber-only email, delivered every Saturday, highlighting the most helpful conversations in <a href=\"https://forms.gle/syq81QDwqbvL3Yn58\" rel=\"noopener nofollow\">our members-only Slack community</a>.</em></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" href=\"https://substackcdn.com/image/fetch/$s_!KxHU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1ca8352-9571-4b81-b041-52374176f4fc_2912x1456.png\" target=\"_blank\" rel=\"noopener nofollow\"><div class=\"image2-inset\"><img alt=\"\" class=\"sizing-normal\" height=\"728\" src=\"https://substackcdn.com/image/fetch/$s_!KxHU!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1ca8352-9571-4b81-b041-52374176f4fc_2912x1456.png\" title=\"\" width=\"1456\"><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"></div></div></div></a></figure></div>\n      <p>\n          <a href=\"https://www.lennysnewsletter.com/p/community-wisdom-finding-your-first\" rel=\"noopener nofollow\">\n              Read more\n          </a>\n      </p>",
+   "content_status": "full",
+   "source_id": "lennys-newsletter",
+   "source_name": "Lenny's Newsletter",
+   "category": "AI PM能力",
+   "fetched_at": "2026-09-19T20:49:08.368185+00:00"
+  },
   {
    "id": "a558850955077643",
    "title": "Muse review: The personal AI agent that gets consumer UX right",
