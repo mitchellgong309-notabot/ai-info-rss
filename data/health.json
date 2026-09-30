@@ -1,9 +1,9 @@
 {
- "checked_at": "2026-09-29T22:23:25.977516+00:00",
+ "checked_at": "2026-09-30T12:46:11.994644+00:00",
  "sources": {
   "lennys-newsletter": {
    "status": "ok",
-   "total": 54
+   "total": 55
   },
   "one-useful-thing": {
    "status": "ok",
@@ -11,7 +11,7 @@
   },
   "latent-space": {
    "status": "ok",
-   "total": 68
+   "total": 69
   },
   "fs-blog": {
    "status": "ok",
@@ -23,7 +23,7 @@
   },
   "stratechery": {
    "status": "ok",
-   "total": 36
+   "total": 37
   },
   "firstround-review": {
    "status": "ok",
