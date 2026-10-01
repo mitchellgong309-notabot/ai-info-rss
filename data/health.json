@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-01T06:07:48.704673+00:00",
+ "checked_at": "2026-10-01T13:30:17.646807+00:00",
  "sources": {
   "lennys-newsletter": {
    "status": "ok",
@@ -7,15 +7,15 @@
   },
   "one-useful-thing": {
    "status": "ok",
-   "total": 8
+   "total": 9
   },
   "latent-space": {
    "status": "ok",
-   "total": 70
+   "total": 71
   },
   "fs-blog": {
    "status": "ok",
-   "total": 16
+   "total": 17
   },
   "bens-bites": {
    "status": "ok",
@@ -23,7 +23,7 @@
   },
   "stratechery": {
    "status": "ok",
-   "total": 37
+   "total": 38
   },
   "firstround-review": {
    "status": "ok",
