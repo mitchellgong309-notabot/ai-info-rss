@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-03T21:26:22.358691+00:00",
+ "checked_at": "2026-10-04T06:02:11.438889+00:00",
  "sources": {
   "lennys-newsletter": {
    "status": "ok",
@@ -22,7 +22,8 @@
    "total": 38
   },
   "stratechery": {
-   "status": "ok",
+   "status": "error",
+   "error": "HTTP 请求失败: Client error '429 Too Many Requests' for url 'https://stratechery.com/feed/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
    "total": 39
   },
   "firstround-review": {
