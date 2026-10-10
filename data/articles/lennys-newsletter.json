@@ -1,8 +1,22 @@
 {
  "source_id": "lennys-newsletter",
- "updated_at": "2026-10-06T00:08:52.961838+00:00",
- "count": 60,
+ "updated_at": "2026-10-10T21:51:31.581727+00:00",
+ "count": 61,
  "articles": [
+  {
+   "id": "09682752ef948315",
+   "title": "🧠 Community Wisdom: Community Wisdom Top Contributors Summer Class 2026 + ML recommendation systems, getting back into product after being fired, deciding when to quit a side project, and more",
+   "url": "https://www.lennysnewsletter.com/p/community-wisdom-community-wisdom",
+   "author": "Kiyani",
+   "published_at": "2026-10-10T13:01:38+00:00",
+   "summary": "Community Wisdom 301",
+   "content_html": "<p><em>👋 Hello and welcome to this week’s edition of ✨ <strong>Community Wisdom</strong> ✨ a subscriber-only email, delivered every Saturday, highlighting the most helpful conversations in <a href=\"https://forms.gle/syq81QDwqbvL3Yn58\" rel=\"noopener nofollow\">our members-only Slack community</a>.</em></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" href=\"https://substackcdn.com/image/fetch/$s_!KxHU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1ca8352-9571-4b81-b041-52374176f4fc_2912x1456.png\" target=\"_blank\" rel=\"noopener nofollow\"><div class=\"image2-inset\"><img alt=\"\" class=\"sizing-normal\" height=\"728\" src=\"https://substackcdn.com/image/fetch/$s_!KxHU!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1ca8352-9571-4b81-b041-52374176f4fc_2912x1456.png\" title=\"\" width=\"1456\"><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"></div></div></div></a></figure></div><p><em><strong>A big thank-you to this month’s community sponsor,</strong> <strong><a href=\"http://posthog.com/lenny?utm_source=influencer&amp;utm_medium=newsletter&amp;utm_campaign=lenny-events-q4\" rel=\"noopener nofollow\">PostHog</a></strong></em><strong>. </strong><em>Give your agents product context. <a href=\"http://posthog.com/lenny?utm_source=influencer&amp;utm_medium=newsletter&amp;utm_campaign=lenny-events-q4\" rel=\"noopener nofollow\">PostHog</a> combines and stores your analytics, errors, replays, and business data so you and your agents can understand and act on it. <a href=\"https://posthog.com/lenny?utm_source=influencer&amp;utm_medium=newsletter&amp;utm_campaign=lenny-events-q4\" rel=\"noopener nofollow\">Claim a free year of PostHog (exclusively for paid subscribers) here</a>.</em></p>\n      <p>\n          <a href=\"https://www.lennysnewsletter.com/p/community-wisdom-community-wisdom\" rel=\"noopener nofollow\">\n              Read more\n          </a>\n      </p>",
+   "content_status": "full",
+   "source_id": "lennys-newsletter",
+   "source_name": "Lenny's Newsletter",
+   "category": "AI PM能力",
+   "fetched_at": "2026-10-10T21:51:31.564054+00:00"
+  },
   {
    "id": "126d97f78ffd37de",
    "title": "🎙️ How I AI: 8 real Jev use cases + How OpenAI uses ChatGPT Sites (live at DevDay!) + Claire’s DevDay recap",
