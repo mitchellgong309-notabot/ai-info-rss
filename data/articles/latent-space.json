@@ -1,6 +1,6 @@
 {
  "source_id": "latent-space",
- "updated_at": "2026-10-16T04:42:00.541826+00:00",
+ "updated_at": "2026-10-16T21:21:18.240692+00:00",
  "count": 93,
  "articles": [
   {
@@ -103,7 +103,7 @@
   },
   {
    "id": "728a22683c3ed7dc",
-   "title": "How Anthropic’s Dynamic Workflows Coordinate Claude Agents",
+   "title": "How Anthropic’s Dynamic Workflows Coordinate Claude Agents (Updated with video!)",
    "url": "https://www.latent.space/p/claude-dynamic-workflows",
    "author": "Richard MacManus",
    "published_at": "2026-10-12T18:18:17+00:00",
