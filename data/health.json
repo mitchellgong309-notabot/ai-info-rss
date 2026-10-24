@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-23T17:16:35.501274+00:00",
+ "checked_at": "2026-10-24T04:47:35.423882+00:00",
  "sources": {
   "lennys-newsletter": {
    "status": "ok",
@@ -10,7 +10,8 @@
    "total": 9
   },
   "latent-space": {
-   "status": "ok",
+   "status": "error",
+   "error": "HTTP 请求失败: The read operation timed out",
    "total": 123
   },
   "fs-blog": {
