@@ -1,8 +1,22 @@
 {
  "source_id": "stratechery",
- "updated_at": "2026-11-10T19:51:29.945152+00:00",
- "count": 70,
+ "updated_at": "2026-11-11T19:42:50.874872+00:00",
+ "count": 71,
  "articles": [
+  {
+   "id": "79aa03e1e465bc13",
+   "title": "Intel Earnings, AMD Earnings, Intel and AMD’s Divergence",
+   "url": "https://stratechery.com/2026/intel-earnings-amd-earnings-intel-and-amds-divergence/",
+   "author": "Ben Thompson",
+   "published_at": "2026-11-11T11:00:00+00:00",
+   "summary": "Intel and AMD's diverging earnings point to fundamental historical differences, and make me wonder if Intel needs to find a new (old) path.",
+   "content_html": "",
+   "content_status": "summary_only",
+   "source_id": "stratechery",
+   "source_name": "Stratechery",
+   "category": "商业判断",
+   "fetched_at": "2026-11-11T19:42:50.246780+00:00"
+  },
   {
    "id": "2bf4c7c3713a5220",
    "title": "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley",
