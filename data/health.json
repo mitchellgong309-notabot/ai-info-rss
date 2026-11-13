@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-12T20:05:56.878566+00:00",
+ "checked_at": "2026-11-13T06:56:10.069413+00:00",
  "sources": {
   "lennys-newsletter": {
    "status": "ok",
@@ -11,7 +11,7 @@
   },
   "latent-space": {
    "status": "ok",
-   "total": 153
+   "total": 154
   },
   "fs-blog": {
    "status": "ok",
@@ -22,9 +22,8 @@
    "total": 50
   },
   "stratechery": {
-   "status": "error",
-   "error": "HTTP 请求失败: Client error '429 Too Many Requests' for url 'https://stratechery.com/feed/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-   "total": 71
+   "status": "ok",
+   "total": 73
   },
   "firstround-review": {
    "status": "ok",
