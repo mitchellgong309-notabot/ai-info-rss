@@ -1,13 +1,13 @@
 {
- "checked_at": "2026-11-22T07:04:31.139122+00:00",
+ "checked_at": "2026-11-22T19:49:46.316995+00:00",
  "sources": {
   "lennys-newsletter": {
    "status": "ok",
-   "total": 93
+   "total": 94
   },
   "one-useful-thing": {
    "status": "ok",
-   "total": 10
+   "total": 9
   },
   "latent-space": {
    "status": "ok",
