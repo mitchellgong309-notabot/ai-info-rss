@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-22T19:49:46.316995+00:00",
+ "checked_at": "2026-11-23T07:52:33.852750+00:00",
  "sources": {
   "lennys-newsletter": {
    "status": "ok",
@@ -30,9 +30,8 @@
    "total": 0
   },
   "the-batch": {
-   "status": "error",
-   "error": "列表页请求失败: Client error '403 Forbidden' for url 'https://www.deeplearning.ai/the-batch/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
-   "total": 25
+   "status": "ok",
+   "total": 31
   },
   "a16z-ai": {
    "status": "ok",
